@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-Container">
+    <header class="header">
+      <p class="header__Result">Your Result</p>
+      <div class="header__circle">
+        <p class="header__circle-76">76</p>
+        <p class="header__circle-100">of 100</p>
+      </div>
+      <p class="header__Great">Great</p>
+      <p class="header__paragraphs">You scored higher than 65% of the people who have taken these tests.</p>
+    </header>
+    <section class="section">
+      <p class="section__Summary">Summary</p>
+      <div class="section__test">
+
+        <div class="section__red">
+          <p class="section__test-Reaction"><img src="/assets/images/icon-reaction.svg" alt="icon_Reaction">Reaction</p>
+          <p class="section__porcent"><span class="section__indice">80</span> / 100</p>
+        </div>
+
+        <div class="section__yellow">
+          <p class="section__test-Memory"><img src="/assets/images/icon-memory.svg" alt="icon_Memory">Memory</p>
+          <p class="section__porcent"><span class="section__indice">92</span>/ 100</p>
+        </div>
+
+        <div class="section__green">
+          <p class="section__test-Verbal"><img src="/assets/images/icon-verbal.svg" alt="icon_verbal">Verbal</p>
+          <p class="section__porcent"><span class="section__indice">61</span> / 100</p>
+        </div>
+
+        <div class="section__blue">
+          <p class="section__test-Visual"><img src="/assets/images/icon-visual.svg" alt="icon_visual">Visual</p>
+          <p class="section__porcent"><span class="section__indice">72</span> / 100</p>
+        </div>
+      </div>
+      <button class="section__buttom">Continue</button>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://youtube.com/@tadeusb6401" target="_blank">Tadeusb</a>.
+  </div>
+</body>
+</html>

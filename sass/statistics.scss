@@ -1,0 +1,131 @@
+@use 'variables' as v;
+
+.section{
+   height: 456px;
+   padding: 0px 32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   background-color: v.$White;
+   &__Summary{
+      font-size: 18px;
+      font-weight: 700;
+   }
+   &__test{
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   
+   }
+   &__red{
+      height: 55px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 12px;
+      background-color: v.$trasparent-red;
+   }
+   &__test-Reaction{
+      width: 100px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: v.$Light-red;
+   }
+   &__porcent{
+      width: 70px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: v.$Light-lavender;
+   }
+   &__indice{
+      font-size: 16px;
+      font-weight: 800;
+      color: v.$Dark-gray-blue;
+   }
+
+   &__yellow{
+      height: 55px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 12px;
+      background-color: v.$trasparent-yellow;
+   }
+   &__test-Memory{
+      width: 100px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: v.$Orangey-yellow;
+   }
+   &__green{
+      height: 55px;
+      padding: 10px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: v.$trasparent-teal;
+   }
+   &__test-Verbal{
+      width: 90px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: v.$Green-teal;
+   }
+   &__blue{
+      height: 55px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 12px;
+      background-color: v.$trasparent-blue;
+   }
+   &__test-Visual{
+      width: 90px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: v.$Cobaltblue;
+   }
+   &__buttom{
+      height: 55px;
+      border: none;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: background-color 0.5s ease;
+      cursor: pointer;
+      color: v.$White;
+      background-color: v.$Dark-gray-blue;
+   }
+   &__buttom:hover{
+      background-image: linear-gradient(to bottom, v.$Light-slate-blue, v.$Light-royal-blue);
+   }
+   @media(min-width: 1000px){
+      height: 515px;
+      width: 370px;
+      padding: 0px 36px;
+      border-top-right-radius: 32px;
+      border-bottom-right-radius: 32px;
+      &__Summary{
+         font-size: 22px;
+         font-weight: 700;
+      }
+   }
+}

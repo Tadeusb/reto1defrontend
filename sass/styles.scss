@@ -1,0 +1,21 @@
+@use 'initial';
+@use 'variables' as v;
+@use 'ViewMobile';
+@use 'statistics';
+
+.main-Container{
+   margin: auto;
+   width: 375px;
+   height: 809px;
+   background-color: v.$White;
+   // min-width: 1440px mi pantalla es muy pequeña
+   @media (min-width: 1000px){
+      height: 515px;
+      width: 740px;
+      margin: 10% auto;
+      display: flex;
+      flex-direction: row;
+      border-radius: 32px;
+      box-shadow: 15px 15px 32px v.$Pale-blue;
+   }
+}
